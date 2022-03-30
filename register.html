@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>registration page</title>
+<style>
+body{
+font-family:calibri;
+background-color:pink;
+}
+button{
+background-color:#4CAF50;
+width:100%;
+color:orange;
+padding:15px;
+margin:10px;
+border:none;
+cursor:pointer;}
+form{
+border:3px solid #f1f1f1;
+}
+input[type=text],input[type=password]{
+width:100%;
+margin:8px 0;
+padding:12px 20px;
+display:inline-block;
+border:2px solid green;
+box-sizing:border-box;
+}
+button:hover{
+opacity:0.7;}
+
+.container{
+padding:25px;
+background-color:lightblue;}
+
+</style>
+</head>
+<body>
+<marquee><h1>welcome to the bank</h1></marquee>
+<form action="http://localhost:8065/Bank_App/registeruser" method="post">
+<div class="container">
+
+<label>name</label>
+<input type="text" name="name" placeholder="enter your name" required><br></br>
+<label>mobile</label>
+ <input type="text" name="mobile" placeholder="enter your number" required><br></br>
+ <label>adhar</label>
+ <input type="text" name="adhar" placeholder="enter your adhar number" required><br></br>
+ <label>email</label>
+ <input type="text" name="email" placeholder="enter your email" required><br></br>
+ <label>password</label>
+ <input type="password" name="pwd" placeholder="enter password" required><br></br>
+ <button type="submit">register</button>
+ 
+
+</div>
+</form>
+
+
+</body>
+</html>
